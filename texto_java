@@ -1,0 +1,91 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package textopractica;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Usuario
+ */
+public class Textopractica {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+        //length()
+        String cadena = "hola";
+        int longitud = cadena.length();
+        JOptionPane.showMessageDialog(null, longitud);
+
+        //charAt(int index)
+        String cadena2 = "Hola";
+        char caracter = cadena2.charAt(1);
+        JOptionPane.showMessageDialog(null, caracter);
+
+        //indexOf(char ch)
+        String cadena3 = "Hola Mundo";
+        int indexChar = cadena3.indexOf('M');
+        JOptionPane.showMessageDialog(null, indexChar);
+
+        //indexOf(char ch, int fromIndex)
+        String cadena4 = "Hola Mundo";
+        int indexFromIndex = cadena4.indexOf('o', 5);
+        JOptionPane.showMessageDialog(null, indexFromIndex);
+
+        //substring(int beginIndex)
+        String cadena5 = "Hola Mundo";
+        String subcadena = cadena5.substring(5);
+        JOptionPane.showMessageDialog(null, subcadena);
+
+        //substring(int beginIndex, int endIndex
+        String cadena6 = "Hola Mundo";
+        String subcadena2 = cadena6.substring(0, 4);
+        JOptionPane.showMessageDialog(null, subcadena2);
+
+        //replace(char oldChar, char newChar)
+        String cadena7 = "Hola";
+        String nuevaCadena = cadena7.replace('o', 'a');
+        JOptionPane.showMessageDialog(null, nuevaCadena);
+
+        //toUpperCase()
+        String cadena8 = "hola";
+        String mayusculas = cadena8.toUpperCase();
+        JOptionPane.showMessageDialog(null, mayusculas);
+
+        //toLowerCase()
+        String cadena9 = "HOLA";
+        String minusculas = cadena9.toLowerCase();
+        JOptionPane.showMessageDialog(null, minusculas);
+
+        //trim()
+        String cadena10 = " Hola ";
+        String sinEspacios = cadena10.trim();
+        JOptionPane.showMessageDialog(null, sinEspacios);
+
+        //contains(CharSequence s)
+        String cadena11 = "Hola Mundo";
+        boolean contiene = cadena11.contains("Mundo");
+        JOptionPane.showMessageDialog(null, contiene);
+
+        //equals(String anotherString)
+        String cadena1 = "Hola";
+        String cadena12 = "Hola";
+        boolean sonIguales = cadena12.equals(cadena2);
+        JOptionPane.showMessageDialog(null, sonIguales);
+
+        //equalsIgnoreCase(String anotherString)
+        String linea1 = "Hola";
+        String linea2 = "hola";
+        boolean sonIguales = linea1.equalsIgnoreCase(linea2);
+
+        JOptionPane.showMessageDialog(null, sonIguales);
+
+    }
+
+}
